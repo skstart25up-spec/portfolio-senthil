@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Showcase | J.G.Senthilkumar</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f0f4f9] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="w-full bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Name -->
+      <a href="index.html" class="text-2xl sm:text-[26px] font-extrabold text-[#1e3a8a] tracking-tight hover:opacity-90 transition">
+        J.G.Senthilkumar
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-10 text-[15px] font-semibold text-slate-700">
+        <a href="index.html" class="flex items-center gap-2 hover:text-blue-600 transition pb-2 border-b-[3px] border-transparent">
+          <span class="text-base">🛖</span> Home
+        </a>
+        <a href="about.html" class="flex items-center gap-2 hover:text-blue-600 transition pb-2 border-b-[3px] border-transparent">
+          <span class="text-base">📄</span> About
+        </a>
+        <!-- Active Portfolio Tab -->
+        <a href="case-studies.html" class="relative flex items-center gap-2 text-slate-900 pb-2 border-b-[3px] border-[#2563eb] font-bold">
+          <span class="text-base">🎨</span> Portfolio
+        </a>
+        <a href="contact.html" class="flex items-center gap-2 hover:text-blue-600 transition pb-2 border-b-[3px] border-transparent">
+          <span class="text-base">📞</span> Contact
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobileMenuBtn" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none" aria-label="Toggle navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pt-2 pb-6 bg-white border-b border-slate-100 space-y-3 font-semibold text-slate-700">
+      <a href="index.html" class="flex items-center gap-3 py-2 hover:text-blue-600">
+        <span>🛖</span> Home
+      </a>
+      <a href="about.html" class="flex items-center gap-3 py-2 hover:text-blue-600">
+        <span>📄</span> About
+      </a>
+      <a href="case-studies.html" class="flex items-center gap-3 py-2 text-blue-600 font-bold">
+        <span>🎨</span> Portfolio
+      </a>
+      <a href="contact.html" class="flex items-center gap-3 py-2 hover:text-blue-600">
+        <span>📞</span> Contact
+      </a>
+    </div>
+  </header>
+
+  <!-- Quick Filter / Section Jump Breadcrumb (Updated without Book Covers) -->
+  <div class="w-full bg-white/60 border-b border-slate-200/50 py-3 sticky top-20 z-40 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between text-xs font-semibold text-slate-500 overflow-x-auto gap-4">
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="index.html" class="hover:text-blue-600 flex items-center gap-1">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to Home
+        </a>
+        <span>/</span>
+        <span class="text-slate-800">Creative Showcase</span>
+      </div>
+      <div class="flex items-center gap-4 shrink-0 text-xs font-medium">
+        <a href="#logos" class="hover:text-blue-600 transition">Logos &amp; Marks</a>
+        <a href="#posters" class="hover:text-blue-600 transition">Posters &amp; Flyers</a>
+        <a href="#videos" class="hover:text-blue-600 transition">Event Videos</a>
+        <a href="#web-ui" class="hover:text-blue-600 transition text-blue-600 font-bold">Web UI</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow max-w-7xl mx-auto px-6 sm:px-10 w-full pt-10 sm:pt-14 pb-20 space-y-16">
+    
+    <!-- Title & Subtitle Header -->
+    <div class="space-y-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <div class="inline-block">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-[#111827] tracking-tight">
+              Creative Showcase
+            </h1>
+            <div class="w-16 h-1 bg-[#1e3a8a] rounded-full mt-2"></div>
+          </div>
+          <p class="text-sm sm:text-[15px] text-slate-500 max-w-3xl leading-relaxed mt-2">
+            Brand logos, academic publications, official press flyers, and multimedia projects from Leilani Katie Publication &amp; PRESS and freelance engagements. Click on any design card to view the full resolution artwork.
+          </p>
+        </div>
+
+        <!-- Official LKP Press Link Badge -->
+        <a href="https://leilanikatiepublication.org/" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white border border-slate-200 text-xs font-bold text-slate-700 shadow-2xs hover:border-blue-500 hover:text-blue-600 transition">
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-blue-600"></i>
+          <span>Official LKP Press Portal</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 1. LOGO DESIGNS & ORGANIZATIONAL MARKS SECTION -->
+    <section id="logos" class="space-y-6 scroll-mt-36">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2.5">
+          <i data-lucide="sparkles" class="w-5 h-5 text-blue-600"></i>
+          <span>Logo Designs &amp; Organizational Marks</span>
+        </h2>
+        <span class="text-xs text-slate-400 font-medium">Click to inspect artwork</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Logo 1: SS Luxe Logo -->
+        <div onclick="openImageModal('logo-ss-luxe.png', 'SS Luxe Monogram Logo', 'Luxury brand monogram featuring dual-tone teal and gold calligraphy flourishes with refined typography.', 'Vector Identity • Luxury Brand')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#050505] flex items-center justify-center p-4 relative overflow-hidden">
+            <img 
+              src="logo-ss-luxe.png" 
+              alt="SS Luxe Logo" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.onerror=null; this.src='image_74f3a6.png';"
+            />
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              SS Luxe • Minimal Black
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Corporate monogram, sleek identity for modern brand.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 2: Final Red Edition / TN59trans Detailing -->
+        <div onclick="openImageModal('logo-tn59trans.png', 'Final Red Edition - TN59trans', 'Bold vibrant logo for automotive detailing and accessories featuring aggressive mascot styling.', 'Automotive Branding • Vector Mascot')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img 
+              src="logo-tn59trans.png" 
+              alt="Final Red Edition TN59trans" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.style.display='none'; document.getElementById('fb-logo-2').style.display='flex';"
+            />
+            <div id="fb-logo-2" class="hidden w-24 h-24 rounded-2xl bg-[#0f172a] flex flex-col items-center justify-center p-2 shadow-sm border border-slate-800 relative">
+              <div class="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center text-red-500 mb-1">
+                <i data-lucide="flame" class="w-6 h-6 fill-red-500 text-red-500"></i>
+              </div>
+              <span class="text-[9px] font-extrabold text-white tracking-wider">TN59trans</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              Final Red Edition
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Bold vibrant logo for lifestyle/fashion vertical.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 3: Autism Awareness Updation / Lifelong Care -->
+        <div onclick="openImageModal('logo-lifelong-care.png', 'Autism Awareness - Lifelong Care', 'Empathetic emblem design featuring interlocking puzzle elements and supportive hands for healthcare and NGO initiatives.', 'Social NGO • Emblem Design')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img 
+              src="logo-lifelong-care.png" 
+              alt="Lifelong Care and Happiness" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.style.display='none'; document.getElementById('fb-logo-3').style.display='flex';"
+            />
+            <div id="fb-logo-3" class="hidden w-24 h-24 rounded-full bg-white flex flex-col items-center justify-center p-2 shadow-sm border-2 border-emerald-500/30">
+              <div class="flex items-center gap-0.5 text-blue-600 mb-0.5">
+                <i data-lucide="heart-handshake" class="w-7 h-7 text-[#0284c7]"></i>
+              </div>
+              <span class="text-[8px] font-bold text-emerald-700 tracking-tight text-center leading-none">Lifelong Care</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              Autism Awareness Updation
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Empathetic design for NGO &amp; support initiatives.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 4: Business Consultant Logo -->
+        <div onclick="openImageModal('logo-business-consultant.png', 'Business Consultant Brand Mark', 'Professional business consultant advisory mark designed for corporate leadership services.', 'Corporate Branding • LKP Press')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-business-consultant.png" alt="Business Consultant Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-4').style.display='flex';" />
+            <div id="fb-logo-4" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="briefcase" class="w-8 h-8 text-amber-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-slate-200">Consultant</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              Business Consultant
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Executive business advisory and consulting brand identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 5: SKRGC Academy Mark -->
+        <div onclick="openImageModal('logo-skrgc-academy.png', 'SKRGC Academy Official Logo', 'Academic institution logo with laurel wreath and scholarly emblem representing research excellence.', 'Academic Branding • SKRGC')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-skrgc-academy.png" alt="SKRGC Academy Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-5').style.display='flex';" />
+            <div id="fb-logo-5" class="hidden w-24 h-24 rounded-full bg-slate-900 border border-emerald-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="award" class="w-8 h-8 text-emerald-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-emerald-300">SKRGC</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              SKRGC Academy
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Official institutional insignia and research academy mark.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 6: NIRDI Logo -->
+        <div onclick="openImageModal('logo-nirdi.png', 'NIRDI National Research Mark', 'Research council logo and research institute symbol for multi-disciplinary initiatives.', 'Research Institution • LKP Press')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-nirdi.png" alt="NIRDI Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-6').style.display='flex';" />
+            <div id="fb-logo-6" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-blue-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="shield" class="w-8 h-8 text-blue-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-blue-300">NIRDI</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              NIRDI
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              National innovation and research development identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 7: IRIPA Logo -->
+        <div onclick="openImageModal('logo-iripa.png', 'IRIPA Professional Association Logo', 'International research & intellectual property association corporate monogram.', 'Association Identity • Academic')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-iripa.png" alt="IRIPA Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-7').style.display='flex';" />
+            <div id="fb-logo-7" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-purple-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="globe-2" class="w-8 h-8 text-purple-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-purple-300">IRIPA</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              IRIPA
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              International research &amp; IP association emblem.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 8: G-RDP Logo -->
+        <div onclick="openImageModal('logo-grdp.png', 'G-RDP Global Research Forum Logo', 'Global research and development platform symbol featuring connected network nodes.', 'Global Platform • Research')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-grdp.png" alt="G-RDP Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-8').style.display='flex';" />
+            <div id="fb-logo-8" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-cyan-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="network" class="w-8 h-8 text-cyan-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-cyan-300">G-RDP</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              G-RDP
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Global research &amp; development network identity mark.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 9: Nociety Logo -->
+        <div onclick="openImageModal('logo-nociety.png', 'Nociety Community Identity', 'Modern society community mark focused on collaborative learning and networking.', 'Community Brand • Media')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-nociety.png" alt="Nociety Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-9').style.display='flex';" />
+            <div id="fb-logo-9" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-amber-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="users-2" class="w-8 h-8 text-amber-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-amber-300">NOCIETY</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              Nociety
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Societal engagement, networking &amp; community identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 10: ICRD Logo -->
+        <div onclick="openImageModal('logo-icrd.png', 'ICRD Conference & Research Logo', 'International Conference & Research Development official visual monogram.', 'Conference Mark • International')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-icrd.png" alt="ICRD Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-10').style.display='flex';" />
+            <div id="fb-logo-10" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-indigo-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="book-marked" class="w-8 h-8 text-indigo-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-indigo-300">ICRD</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              ICRD
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              International conference &amp; research forum identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo 11: JARDP Logo -->
+        <div onclick="openImageModal('logo-jardp.png', 'JARDP Journal Publication Mark', 'Journal of Advanced Research & Development Publication scholarly crest.', 'Academic Journal • LKP Press')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-56 bg-[#0a0f1d] flex items-center justify-center p-4 relative overflow-hidden">
+            <img src="logo-jardp.png" alt="JARDP Logo" class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10" onerror="this.style.display='none'; document.getElementById('fb-logo-11').style.display='flex';" />
+            <div id="fb-logo-11" class="hidden w-24 h-24 rounded-2xl bg-slate-900 border border-emerald-500/40 flex flex-col items-center justify-center p-3 text-center">
+              <i data-lucide="scroll" class="w-8 h-8 text-emerald-400 mb-1"></i>
+              <span class="text-[9px] font-bold text-emerald-300">JARDP</span>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3 text-blue-600"></i> View Logo
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              JARDP
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Peer-reviewed journal publishing &amp; archive seal.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. POSTERS & FLYERS SECTION (Direct Representative Links) -->
+    <section id="posters" class="space-y-6 scroll-mt-36">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2.5">
+          <i data-lucide="image" class="w-6 h-6 text-[#1e3a8a]"></i>
+          <span>Posters &amp; Flyers</span>
+        </h2>
+        <span class="text-xs text-slate-400 font-medium">Click card to view artwork or click link</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Flyer 1: KP Academy E-Magazine -->
+        <div onclick="openImageModal('poster-kp-magazine.png', 'KP Academy E-Magazine', 'Digital magazine layout, interactive editorial design & event coverage', 'Publication Layout • Editorial')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-52 bg-gradient-to-b from-[#e3efff] to-[#f5f9ff] flex items-center justify-center relative overflow-hidden">
+            <img 
+              src="poster-kp-magazine.png" 
+              alt="KP Academy E-Magazine" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.style.display='none'; document.getElementById('fallback-poster-1').style.display='flex';"
+            />
+            <div id="fallback-poster-1" class="hidden w-16 h-16 rounded-2xl bg-white shadow-2xs flex items-center justify-center text-[#1e3a8a]">
+              <i data-lucide="newspaper" class="w-8 h-8 stroke-[2]"></i>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-blue-600 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3"></i> View Poster
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-4">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600">E-Magazine Portal</span>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors mt-0.5">
+                KP Academy E-Magazine
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Digital magazine layout, interactive editorial and articles.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <a href="https://lkpacademy.co.in/e-magazine/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-xs font-bold text-blue-700 transition">
+                <span>https://lkpacademy.co.in/e-magazine/</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flyer 2: SKRG Publication -->
+        <div onclick="openImageModal('poster-skrg.png', 'SKRG Publication', 'Academic flyers, journal branding, and research call for papers', 'Journal Media • Academic Marketing')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-52 bg-gradient-to-b from-[#e3efff] to-[#f5f9ff] flex items-center justify-center relative overflow-hidden">
+            <img 
+              src="poster-skrg.png" 
+              alt="SKRG Publication" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.style.display='none'; document.getElementById('fallback-poster-2').style.display='flex';"
+            />
+            <div id="fallback-poster-2" class="hidden w-16 h-16 rounded-2xl bg-white shadow-2xs flex items-center justify-center text-[#1e3a8a]">
+              <i data-lucide="landmark" class="w-8 h-8 stroke-[2]"></i>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-blue-600 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3"></i> View Poster
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-4">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600">Research Journal Portal</span>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors mt-0.5">
+                SKRG Publication
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Academic flyers &amp; journal branding for publications.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <a href="https://skrgcpublication.org/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-xs font-bold text-blue-700 transition">
+                <span>https://skrgcpublication.org/</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flyer 3: Leilani Katie Official -->
+        <div onclick="openImageModal('poster-leilani-katie.png', 'Leilani Katie Official Press', 'Brand posters, conference announcements, and press release materials', 'Official Press • Branding Collateral')" 
+             class="bg-white rounded-[26px] overflow-hidden border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 group flex flex-col justify-between cursor-pointer">
+          <div class="h-52 bg-gradient-to-b from-[#e3efff] to-[#f5f9ff] flex items-center justify-center relative overflow-hidden">
+            <img 
+              src="poster-leilani-katie.png" 
+              alt="Leilani Katie Official" 
+              class="max-h-44 max-w-[85%] object-contain group-hover:scale-105 transition-transform duration-300 relative z-10"
+              onerror="this.style.display='none'; document.getElementById('fallback-poster-3').style.display='flex';"
+            />
+            <div id="fallback-poster-3" class="hidden w-16 h-16 rounded-2xl bg-white shadow-2xs flex items-center justify-center text-[#1e3a8a]">
+              <i data-lucide="book-open" class="w-8 h-8 stroke-[2]"></i>
+            </div>
+            <div class="absolute bottom-2.5 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-blue-600 shadow-xs flex items-center gap-1 z-20">
+              <i data-lucide="maximize-2" class="w-3 h-3"></i> View Poster
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-4">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600">Publication &amp; Press</span>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors mt-0.5">
+                Leilani Katie Official
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Brand posters &amp; official press release materials.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <a href="https://leilanikatiepublication.org/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-xs font-bold text-blue-700 transition">
+                <span>https://leilanikatiepublication.org/</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. EVENT VIDEOS & MEDIA SECTION (Direct YouTube Links) -->
+    <section id="videos" class="space-y-6 scroll-mt-36">
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2.5">
+        <i data-lucide="play-circle" class="w-6 h-6 text-[#1e3a8a]"></i>
+        <span>Event Videos &amp; Media</span>
+      </h2>
+
+      <div class="bg-white rounded-[28px] p-6 sm:p-8 border border-slate-100 shadow-xs">
+        <div class="flex flex-wrap gap-3">
+          
+          <a href="https://youtu.be/Shj0LZMDtaA?si=8Q4q4y1MQmGFD35c" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Community Highlight</span>
+          </a>
+
+          <a href="https://youtu.be/arSSILTVt4Y?si=KXngkuRB22S-znXs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Design Workshop</span>
+          </a>
+
+          <a href="https://youtu.be/guPLpxfy4Qg?si=qR-K25QFoUMTIrt" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Awards Ceremony</span>
+          </a>
+
+          <a href="https://youtu.be/xoSS6A1BPaE?si=Q6FlsHpPZuSlaQrs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Media Talk</span>
+          </a>
+
+          <a href="https://youtu.be/jRjG2amxKcY?si=nW9dfxukLUf0AQez" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>LKP Press Event</span>
+          </a>
+
+          <a href="https://youtu.be/ozlulyNgX-I?si=uaAjSE2q2PRnu6xp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>Book Launch Sizzle</span>
+          </a>
+
+          <a href="https://youtu.be/W7n9QKofnll?si=Jw8299bbDRWHmX7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#edf4ff] hover:bg-blue-100/90 text-slate-800 text-xs font-semibold transition hover:scale-105">
+            <i data-lucide="video" class="w-3.5 h-3.5 text-blue-600"></i>
+            <span>International Conference</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OSIZ WEB UI & LIVE CLIENT WORK -->
+    <section id="web-ui" class="space-y-6 scroll-mt-36">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2.5">
+          <i data-lucide="globe" class="w-6 h-6 text-[#1e3a8a]"></i>
+          <span>Web3 &amp; Interactive Web UI (Osiz Technologies)</span>
+        </h2>
+        <span class="text-xs text-slate-400 font-medium">Live Production Deploys</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Apex Crypto Exchange -->
+        <div onclick="openImageModal('preview-apex-crypto.png', 'Apex Crypto Exchange Platform', 'High-frequency trading terminal, crypto swaps & liquidity books', 'Web3 / Fintech • Osiz Technologies')" 
+             class="bg-white rounded-[26px] p-6 border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 flex flex-col justify-between cursor-pointer group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full uppercase">Web3 Platform</span>
+              <span class="text-xs text-slate-400 font-mono">Osiz Tech</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 pt-1 group-hover:text-blue-600 transition-colors">
+              Apex Crypto Exchange
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Figma interface layout and workflow for high-speed trading, order books, and responsive crypto swaps.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Click to preview</span>
+            <a href="https://www.developcoins.com/portfolio/apex-crypto-exchange" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1 font-bold text-blue-600 hover:text-blue-800">
+              <span>Live Deploy</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- AI Development Company -->
+        <div onclick="openImageModal('preview-ai-portal.png', 'AI Development Company Portal', 'Landing architecture and structured visual hierarchy for AI solutions', 'Enterprise AI • Osiz Technologies')" 
+             class="bg-white rounded-[26px] p-6 border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 flex flex-col justify-between cursor-pointer group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full uppercase">Enterprise AI</span>
+              <span class="text-xs text-slate-400 font-mono">Osiz Tech</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 pt-1 group-hover:text-blue-600 transition-colors">
+              AI Development Company Portal
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              High-converting landing architecture and modern component cards for artificial intelligence software offerings.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Click to preview</span>
+            <a href="https://www.developcoins.com/ai-development-company" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1 font-bold text-blue-600 hover:text-blue-800">
+              <span>Live Deploy</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Halloween Campaign -->
+        <div onclick="openImageModal('preview-halloween.png', 'Interactive Holiday Campaign Experience', 'Festive visual storytelling, countdowns & gamified engagement banners', 'Marketing UX • Osiz Technologies')" 
+             class="bg-white rounded-[26px] p-6 border border-slate-100 shadow-xs hover:shadow-xl hover:border-blue-400 transition-all duration-200 flex flex-col justify-between cursor-pointer group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full uppercase">Campaign UX</span>
+              <span class="text-xs text-slate-400 font-mono">Osiz Tech</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 pt-1 group-hover:text-blue-600 transition-colors">
+              Interactive Holiday Campaign
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Thematic campaign microsite with festive visuals, promotional countdowns, and interactive marketing banners.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Click to preview</span>
+            <a href="https://www.developcoins.com/halloween" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-1 font-bold text-blue-600 hover:text-blue-800">
+              <span>Live Deploy</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Registration Banner -->
+    <div class="flex justify-center pt-4">
+      <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#e8f1fc] text-slate-700 text-xs font-medium border border-blue-100 text-center shadow-2xs">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+        <span>UDYAM Reg. No: TN-12-0099209 | GST: 33CLZPJ9262K1Z8 | Recognized by Ministry of MSME, Govt of India (ISO 2108:2005)</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive Lightbox Modal for Full Image View -->
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 transition-all">
+    <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-hidden flex flex-col shadow-2xl border border-slate-100 animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+        <div class="pr-4">
+          <h3 id="imageModalTitle" class="text-base sm:text-lg font-extrabold text-slate-900 leading-tight"></h3>
+          <p id="imageModalCategory" class="text-xs text-slate-500 font-mono mt-0.5"></p>
+        </div>
+        <button onclick="closeImageModal()" class="w-9 h-9 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center transition focus:outline-none" aria-label="Close modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Image Body -->
+      <div class="flex-grow p-4 sm:p-6 bg-slate-900/5 flex items-center justify-center overflow-auto max-h-[68vh]">
+        <img id="imageModalSrc" src="" alt="Artwork Preview" class="max-w-full max-h-[64vh] object-contain rounded-xl shadow-md border border-slate-200 bg-white" />
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-3.5 border-t border-slate-100 bg-white flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div id="imageModalDescription" class="text-slate-600 font-medium"></div>
+        <div class="flex items-center gap-3">
+          <a id="imageModalOpenBtn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 font-semibold inline-flex items-center gap-1.5 transition">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <span>Open Original Image</span>
+          </a>
+          <button onclick="closeImageModal()" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold transition">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full bg-white border-t border-slate-100 py-6 text-center text-xs text-slate-500 font-medium">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>&copy; 2026 J.G.Senthilkumar. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <span>&bull;</span>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <span>&bull;</span>
+        <a href="case-studies.html" class="text-blue-600 font-bold">Portfolio</a>
+        <span>&bull;</span>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initializations & Modal Logic -->
+  <script>
+    lucide.createIcons();
+
+    // Mobile Navbar Toggle Logic
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Lightbox Modal Functions
+    function openImageModal(imgSrc, title, desc, category) {
+      document.getElementById('imageModalTitle').textContent = title;
+      document.getElementById('imageModalCategory').textContent = category;
+      document.getElementById('imageModalDescription').textContent = desc;
+      document.getElementById('imageModalSrc').src = imgSrc;
+      document.getElementById('imageModalOpenBtn').href = imgSrc;
+      
+      document.getElementById('imageModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      lucide.createIcons();
+    }
+
+    function closeImageModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Close on Escape Key & Click Outside
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeImageModal();
+    });
+
+    document.getElementById('imageModal').addEventListener('click', (e) => {
+      if (e.target.id === 'imageModal') closeImageModal();
+    });
+  </script>
+</body>
+</html>
